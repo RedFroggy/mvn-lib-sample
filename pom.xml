@@ -4,7 +4,7 @@
   <groupId>fr.redfroggy</groupId>
   <artifactId>maven-lib-sample</artifactId>
   <packaging>jar</packaging>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.2-SNAPSHOT</version>
   <name>maven-lib-sample</name>
   <description>Example project to auto-deploy maven projects</description>
   <url>https://github.com/RedFroggy/mvn-lib-sample</url>
@@ -91,6 +91,10 @@
             </goals>
             <!-- If using gpg > 2.1 it is necessary for gpg to not try to use the pinentry programs
               however, it looks like Travis does not need this entry -->
+            <configuration>
+              <keyname>${gpg.keyname}</keyname>
+              <passphraseServerId>${gpg.passphrase}</passphraseServerId>
+            </configuration>
           </execution>
         </executions>
       </plugin>
