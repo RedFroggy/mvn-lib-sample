@@ -4,7 +4,7 @@
   <groupId>fr.redfroggy</groupId>
   <artifactId>maven-lib-sample</artifactId>
   <packaging>jar</packaging>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.2-SNAPSHOT</version>
   <name>maven-lib-sample</name>
   <description>Example project to auto-deploy maven projects</description>
   <url>https://github.com/RedFroggy/mvn-lib-sample</url>
