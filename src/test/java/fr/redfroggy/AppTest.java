@@ -23,7 +23,7 @@ public class AppTest {
     }
 
     /**
-     * Make sure that "Hello World!" string can be printed.
+     * Make sure that "Hello My World!" string can be printed.
      *
      * @throws Exception
      */
@@ -31,6 +31,6 @@ public class AppTest {
     public void canPrintHelp() throws Exception {
         String[] args = {"-help"};
         App.main(args);
-        assertThat(outContent.toString()).contains("Hello World!");
+        assertThat(outContent.toString()).contains("Hello My World!");
     }
 }
