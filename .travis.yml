@@ -11,6 +11,7 @@ before_install: |
   if [[ "$TRAVIS_PULL_REQUEST" = false ]] && [[ "$TRAVIS_BRANCH" = master ]]; then
     echo $GPG_SECRET_KEYS | base64 --decode | gpg --import --no-tty --batch
   fi
+  nvm use 11
 # install dependencies used in after_success here because they don't get cached if called in after_success
 before_script:
   - yarn global add https://github.com/conveyal/maven-semantic-release/archive/v4.5.0.tar.gz semantic-release@15
