@@ -27,7 +27,7 @@ public class AppTest {
      */
     @BeforeEach
     public void setUpStreams() {
-        //System.setOut(new PrintStream(outContent));
+        System.setOut(new PrintStream(outContent));
     }
 
     /**
