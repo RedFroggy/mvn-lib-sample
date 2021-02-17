@@ -49,7 +49,7 @@
     <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
     <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
     <junit.version>5.5.2</junit.version>
-    <assertj-core.version>3.14.0</assertj-core.version>
+    <assertj-core.version>3.15.0</assertj-core.version>
   </properties>
   <!-- Define where the source code for this project lives -->
   <scm>
